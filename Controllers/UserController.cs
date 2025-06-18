@@ -4,9 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API_Crud.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UserController : ControllerBase
+   
+    public class UserController : API_CrudBaseController
     {
 
         // Requisição do tipo Get 
@@ -92,6 +91,8 @@ namespace API_Crud.Controllers
         {
             return NoContent();
         }
+
+
 
     }
 }
